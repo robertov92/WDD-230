@@ -8,7 +8,6 @@ html {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 750px;
     margin: 0 auto;
 }
@@ -18,18 +17,7 @@ footer {
     text-align: center;
     color: cornsilk;
     background-color: rgb(32, 32, 32);
-    border-radius: 10px;
     padding: 15px;
-}
-
-header h1 {
-    margin-right: 100px;
-}
-
-header img {
-    float: right;
-    margin-top: -85px;
-    box-shadow: 0 5px 20px rgb(51, 50, 50);
 }
 
 main {
@@ -37,11 +25,19 @@ main {
 }
 
 footer {
-    font-size: .8rem;
+    font-size: .7em;
 }
 
 footer a {
     color: cornsilk;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.3em;
 }
 
 #date {
