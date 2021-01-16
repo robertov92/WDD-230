@@ -21,22 +21,70 @@ body {
     background-color: whitesmoke;
 }
 
+main {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
 .card {
     border: 1px solid #a3a3a3;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #e9e6e6;
+    margin: 5px;
+    font-size: 1.5em;
 }
 
 h3 {
-    background-color: #0E1430;
+    background-color: #303964;
+    border-radius: 9px 9px 0 0;
     color: whitesmoke;
+    padding: 20px;
 }
 
-p,
+p {
+    padding: 15px;
+}
+
 a {
-    padding: 10px;
+    margin: 0 20px;
+}
+
+.img-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 img {
     border: 1px solid #acabab;
+    max-width: 95%;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        max-width: 1000px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    footer {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    main {
+        max-width: 1600px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 40px auto;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .card {
+        margin: 10px;
+    }
 }
