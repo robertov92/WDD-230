@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header img {
+    width: 100px;
+}
+
+header {
+    padding: 15px;
+    text-align: center;
+}
+
+nav,
+footer {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#104f55+1,01200f+100 */
+    background: rgb(16, 79, 85);
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(16, 79, 85, 1) 1%, rgba(1, 32, 15, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(16, 79, 85, 1) 1%, rgba(1, 32, 15, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(16, 79, 85, 1) 1%, rgba(1, 32, 15, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#104f55', endColorstr='#01200f', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav ul li a {
+    display: block;
+    padding: .7rem 2%;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    margin: 5px;
+}
+
+.content-box {
+    border: 1px dotted #ccc;
+    background-color: whitesmoke;
+    padding: 40px;
+    margin-bottom: 15px;
+}
+
+footer {
+    color: white;
+    padding: 25px;
+}
