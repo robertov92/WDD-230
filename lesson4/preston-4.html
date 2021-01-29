@@ -11,13 +11,21 @@
 </head>
 
 <body>
+
     <header>
-        <img src="images/icon.png" alt="localweather icon">
-        <h1>Local Weather Club</h1>
+        <div id="header-container">
+            <div id="header-image-logo">
+                <img src="images/icon.png" alt="localweather icon">
+                <div>
+                    <h1>Local Weather Club</h1>
+                    <p>Your weather site</p>
+                </div>
+            </div>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
     </header>
 
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
@@ -29,16 +37,40 @@
     </nav>
 
     <main>
-        <h2>Preston Idaho</h2>
-        <div class="content-box">Hero w/ weather summary</div>
-        <div class="content-box">5 Day Forecast</div>
-        <div class="content-box">Article</div>
-        <div class="content-box">Contact Information</div>
+        <div id="main-container">
+            <h2>Preston Idaho</h2>
+            <div class="content-box">Hero w/ weather summary</div>
+            <div class="content-box">5 Day Forecast</div>
+            <div class="content-box">Article</div>
+        </div>
     </main>
 
     <footer>
-        <p>&copy;2021 | Roberto Villanueva | Mexico City</p>
-        <script src="js/scripts.js"></script>
+        <div id="footer-container">
+            <div id="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>📍 A place that I do not know</li>
+                    <li>☎ (123)456-7890</li>
+                    <li>✉ person@local.weather</li>
+                </ul>
+                <div id="social-media">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook Link"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter Link"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram Link"></a>
+                </div>
+            </div>
+
+            <div id="map">
+                <p>Map</p>
+            </div>
+
+            <div id="footerbar">
+                <p>&copy;2021 | Roberto Villanueva |
+                    <script src="js/scripts.js"></script>
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 
