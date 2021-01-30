@@ -21,4 +21,7 @@
     footer {
         padding: 30px 90px;
     }
+    #footerbar {
+        font-size: .95rem;
+    }
 }
