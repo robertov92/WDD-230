@@ -15,12 +15,3 @@ document.write(todayFormatted);
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
-
-function initMap() {
-    var location = { lat: 42.096291, lng: -111.876640 };
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: location
-    });
-    var marker = new google.maps.Marker({ position: location, map: map });
-}

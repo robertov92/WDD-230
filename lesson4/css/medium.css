@@ -14,6 +14,10 @@
     main {
         margin: 0 40px;
     }
+    main h2 {
+        color: #022b3a;
+        font-size: 2rem;
+    }
     footer {
         padding: 30px 90px;
     }
