@@ -117,3 +117,7 @@ iframe {
 #contact-info {
     margin: 0 7% 30px;
 }
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+}
