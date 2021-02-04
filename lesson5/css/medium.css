@@ -1,0 +1,32 @@
+@media only screen and (min-width: 35rem) {
+    header {
+        padding: 0 30px;
+    }
+    header img {
+        width: 140px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    nav button {
+        font-size: 2.2rem;
+    }
+    main {
+        margin: 0 40px;
+    }
+    main h2 {
+        color: #022b3a;
+        font-size: 2rem;
+    }
+    .article img {
+        width: 50%;
+        float: right;
+        margin: 0 0 20px 20px;
+    }
+    footer {
+        padding: 30px 90px;
+    }
+    #footerbar {
+        font-size: .95rem;
+    }
+}
