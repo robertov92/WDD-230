@@ -1,5 +1,8 @@
 @media only screen and (min-width: 35rem) {
-    header {
+    #prestonPancakes {
+        font-size: 1.4rem;
+    }
+    #header-container {
         padding: 0 30px;
     }
     header img {

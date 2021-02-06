@@ -5,6 +5,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#prestonPancakes {
+    color: white;
+    background: linear-gradient(to bottom, rgba(0, 134, 183, 1) 0%, rgba(0, 0, 0, 1) 45%);
+    text-align: center;
+    padding: 15px 0;
+    font-size: .9rem;
+    display: none;
+}
+
 #header-container {
     display: flex;
     padding: 5px;
@@ -119,7 +128,10 @@ footer {
 }
 
 #social-media {
-    display: none;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 300px;
 }
 
 #map {
@@ -146,5 +158,5 @@ iframe {
 }
 
 nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
 }
