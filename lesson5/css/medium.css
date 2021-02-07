@@ -24,6 +24,7 @@
     .summary,
     .hero img {
         margin-bottom: 20px;
+        max-width: 100%;
     }
     .table {
         display: inline;
