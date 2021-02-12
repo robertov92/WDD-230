@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,500&display=swap');*/
+
 * {
-    font-family: 'Kufam', cursive;
+    font-family: 'Kufam';
 }
 
 html {
