@@ -49,12 +49,15 @@
             <h2>Preston Idaho</h2>
 
             <div class="hero">
-                <img src="images/preston-hero2.jpg" alt="Preston hero image">
+                <img src="images/preston-hero-large.jpg" sizes="100vw" srcset="images/preston-hero-small.jpg 560w,
+                images/preston-hero-medium.jpg 920w, images/preston-hero-large.jpg 1000w" alt="Preston hero image">
                 <div class="summary">
                     <h3>Weather Summary</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum sit, consectetur adipisicing.</p>
-                    <p>Lorem ipsum dolor sit amet, adipisicing. Illum!</p>
+                    <p>Currently: Rainy</p>
+                    <p>High: <span id="temperature">49</span> °F</p>
+                    <p>Wind Chill: <span id="windChill"></span> °F</p>
+                    <p>Humidity: 95 %</p>
+                    <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
                 </div>
             </div>
 
@@ -132,6 +135,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFontLoad.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>
