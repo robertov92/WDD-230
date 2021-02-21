@@ -1,0 +1,19 @@
+main {
+    text-align: center;
+}
+
+img {
+    display: block;
+    border: 1px solid black;
+    margin-top: 300px;
+    margin: 300px auto 0;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 3s;
+}
