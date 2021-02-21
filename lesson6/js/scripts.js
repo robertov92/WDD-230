@@ -10,7 +10,8 @@ var month = months[today.getMonth()];
 var year = today.getFullYear();
 
 todayFormatted = weekDay + ', ' + day + ' ' + month + ' ' + year;
-document.write(todayFormatted);
+document.getElementById("date").innerHTML = todayFormatted;
+
 
 //Responsive navigation menu
 function toggleMenu() {
