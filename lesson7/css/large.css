@@ -86,9 +86,7 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, .7)
     }
     .gallery-grid {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2%;
         margin-bottom: 100px;
     }
     figure {
