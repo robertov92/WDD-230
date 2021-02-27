@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Weather Club | Preston</title>
+    <meta name="description" content="Weather information and news from Eastern-Idaho. All you need to be up to date.">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/icon.ico">
+</head>
+
+<body>
+
+    <header>
+        <div id="prestonPancakes">
+            <p>Saturday = Preston Pancakes in the Park!
+                <br>9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <div id="header-container">
+            <div id="header-image-logo">
+                <img src="images/icon.png" alt="localweather icon">
+                <div id="title-moto">
+                    <h1>Local Weather Club</h1>
+                    <p>Your weather site</p>
+                </div>
+            </div>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </header>
+
+
+
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Heaven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-container">
+            <h2>Preston Idaho</h2>
+
+            <div class="hero">
+                <img src="images/preston-hero-large.jpg" sizes="100vw" srcset="images/preston-hero-small.jpg 560w,
+                images/preston-hero-medium.jpg 920w, images/preston-hero-large.jpg 1000w" alt="Preston hero image">
+                <div class="summary">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: Rainy</p>
+                    <p>High: <span id="temperature">49</span> °F</p>
+                    <p>Wind Chill: <span id="windChill"></span> °F</p>
+                    <p>Humidity: 95 %</p>
+                    <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
+                </div>
+            </div>
+
+            <div class="table">
+                <h3>5 Days Forecast</h3>
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                        <tr>
+                            <td><img src="images/icon.png" alt="weather">
+                                <p>56°F</p>
+                            </td>
+                            <td><img src="images/icon.png" alt="weather">
+                                <p>56°F</p>
+                            </td>
+                            <td><img src="images/icon.png" alt="weather">
+                                <p>56°F</p>
+                            </td>
+                            <td><img src="images/icon.png" alt="weather">
+                                <p>56°F</p>
+                            </td>
+                            <td><img src="images/icon.png" alt="weather">
+                                <p>56°F</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <article class="article">
+                <img src="images/preston-article.jpg" alt="Preston article">
+                <h3>Article Title</h3>
+                <p>By John Doe</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ab culpa deserunt, nam, quos fuga nostrum, sapiente a nihil facere perspiciatis. Id delectus ab voluptates? Iusto, inventore minima atque quasi, nemo laudantium vero corporis
+                    quidem porro a suscipit placeat deserunt quas delectus dolores! Earum totam perferendis atque, ipsa eveniet libero minima sit ad saepe provident, cum aspernatur ab est. Animi repellendus non dolorem ad eaque deserunt distinctio alias
+                    odio cumque. Culpa quaerat nesciunt, voluptatum cumque veniam voluptas eos modi harum quibusdam. Molestiae, labore error! Earum nesciunt voluptatibus repudiandae incidunt impedit at ad quasi id dolore perspiciatis, ratione reprehenderit
+                    voluptas repellendus error dignissimos veritatis recusandae voluptates odio, ullam esse officia! Mollitia earum debitis maiores animi modi autem veritatis.</p>
+
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <div id="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>📍 555 Some Street</li>
+                    <li>☎ (123)456-7890</li>
+                    <li>✉ person@local.org</li>
+                </ul>
+                <div id="social-media">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook Link"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter Link"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram Link"></a>
+                </div>
+            </div>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2smx!4v1612021907351!5m2!1sen!2smx"
+                    width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div id="footerbar">
+                <p>&copy;Local Weather Club | Roberto Villanueva</p>
+                <p id="date"></p>
+                <p>
+                    <script src="js/scripts.js"></script>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFontLoad.js"></script>
+    <script src="js/windChill.js"></script>
+</body>
+
+</html>
