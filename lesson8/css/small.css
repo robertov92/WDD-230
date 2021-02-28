@@ -255,3 +255,7 @@ form input.submitBtn {
     width: 100%;
     font-size: 1.2rem;
 }
+
+#thanks {
+    margin-bottom: 100px;
+}
