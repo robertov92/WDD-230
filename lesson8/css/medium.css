@@ -73,4 +73,13 @@
     figure {
         margin-bottom: 5px;
     }
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    form {
+        padding: 20px 50px;
+    }
+    form fieldset {
+        padding: 20px 50px;
+    }
 }

@@ -22,3 +22,7 @@ function toggleMenu() {
 if (today.getDay() == 5) {
     document.getElementById("prestonPancakes").style.display = "block";
 }
+
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
