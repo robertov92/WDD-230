@@ -47,7 +47,8 @@
             <h2>Report a Storm</h2>
 
             <form method="get" action="thanks.html">
-                <fieldset>
+
+                <fieldset class="form-top">
                     <legend>Contact Information</legend>
                     <label class="top">Full Name* <input type="text" name="fname" pattern="[\sA-Za-z]{5,}" required></label>
                     <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
@@ -99,19 +100,19 @@
                 </fieldset>
 
 
-                <div class="bottomForm">
-                    <fieldset>
-                        <legend>Other Information</legend>
-                        <div>Are you in danger?</div>
-                        <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
-                        <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
-                        <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
-                        <br>
-                        <label class="top">Comments
+
+                <fieldset>
+                    <legend>Other Information</legend>
+                    <div>Are you in danger?</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+                    <br>
+                    <label class="top">Comments
                                 <textarea name="comments" rows="5" placeholder="Please include any other details here"></textarea></label>
-                    </fieldset>
-                    <input class="submitBtn" type="submit" value="Send Report">
-                </div>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Send Report">
+
 
 
             </form>
