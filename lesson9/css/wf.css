@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.small {
+    width: 300px;
+}
+
+img {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);
+}
