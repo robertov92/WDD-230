@@ -336,3 +336,7 @@ section h2 {
     text-decoration: none;
     color: white;
 }
+
+#current-condition {
+    text-transform: capitalize;
+}

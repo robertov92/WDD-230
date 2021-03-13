@@ -33,11 +33,8 @@ fetch(apiURLforecast)
         let day = 1; // this variable will help me find the correct html elements by id
         const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-        // saving jsOject to an array for easier manipulation
-        let array = jsObject.list;
-
-        // finds the elements form the array in which dt_txt includes "18:00:00"
-        array.forEach(element => {
+        // finds the elements form the list in which dt_txt includes "18:00:00"
+        jsObject.list.forEach(element => {
             if (element.dt_txt.includes("18:00:00")) {
                 // displaying day of the week
                 let d = new Date(element.dt_txt);
