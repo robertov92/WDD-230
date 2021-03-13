@@ -30,8 +30,6 @@ const apiURLforecast = 'https://api.openweathermap.org/data/2.5/forecast?id=5604
 fetch(apiURLforecast)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
-
         let day = 1; // this variable will help me find the correct html elements by id
         const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
@@ -41,7 +39,6 @@ fetch(apiURLforecast)
         // finds the elements form the array in which dt_txt includes "18:00:00"
         array.forEach(element => {
             if (element.dt_txt.includes("18:00:00")) {
-                console.log(element);
                 // displaying day of the week
                 let d = new Date(element.dt_txt);
                 document.getElementById(`dayofweek${day}`).textContent = dayofWeek[d.getDay()];
