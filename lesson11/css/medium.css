@@ -23,11 +23,8 @@
     }
     .summary,
     .hero img {
-        margin-bottom: 20px;
         max-width: 100%;
-    }
-    .article {
-        margin: 40px 0;
+        margin-bottom: 30px;
     }
     .article img {
         width: 50%;
@@ -60,7 +57,7 @@
     }
     section {
         display: flex;
-        margin: 2% auto;
+        margin: 30px auto;
         max-width: 600px;
     }
     section img {
@@ -78,5 +75,17 @@
     }
     section:nth-child(odd) {
         flex-direction: row-reverse;
+    }
+    .events {
+        margin-bottom: 30px;
+    }
+    .table {
+        margin-bottom: 30px;
+    }
+    .article {
+        margin-bottom: 30px;
+    }
+    .article h3 {
+        margin-top: 0;
     }
 }
