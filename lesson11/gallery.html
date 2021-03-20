@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Weather Club | Weather Gallery</title>
+    <meta name="description" content="Weather information and news from Eastern-Idaho. All you need to be up to date.">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/icon.ico">
+</head>
+
+<body>
+
+    <header>
+        <div id="prestonPancakes">
+            <p>Saturday = Preston Pancakes in the Park!
+                <br>9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <div id="header-container">
+            <div id="header-image-logo">
+                <img src="images/icon.png" alt="localweather icon">
+                <div id="title-moto">
+                    <h1>Local Weather Club</h1>
+                    <p>Your weather site</p>
+                </div>
+            </div>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Heaven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-container">
+            <h2>Weather Gallery</h2>
+            <div class="gallery-grid">
+                <figure>
+                    <img class="gallery-image" data-src="images/gallery1.jpg" alt="image 1">
+                    <figcaption>Desert Road</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/fishhaven.jpg" alt="image 2">
+                    <figcaption>Fields</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/gallery3.jpg" alt="image 3">
+                    <figcaption>Before the Storm</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/gallery4.jpg" alt="image 4">
+                    <figcaption>Snowy Forest</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/sodasprings.jpg" alt="image 5">
+                    <figcaption>Summer Rainbow</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/gallery6.jpg" alt="image 6">
+                    <figcaption>Night Sky</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/gallery7.jpg" alt="image 7">
+                    <figcaption>The Lake</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/gallery8.jpg" alt="image 8">
+                    <figcaption>Great Falls</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/gallery9.jpg" alt="image 9">
+                    <figcaption>The Mills</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/preston.jpg" alt="image 10">
+                    <figcaption>Little Road</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/gallery11.jpg" alt="image 11">
+                    <figcaption>Sunset from the Fields</figcaption>
+                </figure>
+                <figure>
+                    <img class="gallery-image" data-src="images/gallery12.jpg" alt="image 12">
+                    <figcaption>Moonlight</figcaption>
+                </figure>
+            </div>
+        </div>
+        <script src="js/lazyload.js"></script>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <div id="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>📍 555 Some Street</li>
+                    <li>☎ (123)456-7890</li>
+                    <li>✉ person@local.org</li>
+                </ul>
+                <div id="social-media">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="images/facebook.png" alt="Facebook Link"></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener"><img src="images/twitter.png" alt="Twitter Link"></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="images/instagram.png" alt="Instagram Link"></a>
+                </div>
+            </div>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5736780.968431805!2d-118.64141435860562!3d45.406060969678165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho%2C%20USA!5e0!3m2!1sen!2smx!4v1614459460792!5m2!1sen!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="footerbar">
+                <p>&copy;Local Weather Club | Roberto Villanueva</p>
+                <p id="date"></p>
+                <p>
+                    <script src="js/scripts.js"></script>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFontLoad.js"></script>
+    <script src="js/windChill.js"></script>
+</body>
+
+</html>

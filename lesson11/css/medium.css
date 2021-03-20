@@ -1,0 +1,82 @@
+@media only screen and (min-width: 35rem) {
+    #prestonPancakes {
+        font-size: 1.4rem;
+    }
+    #header-container {
+        padding: 0 30px;
+    }
+    header img {
+        width: 140px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    nav button {
+        font-size: 2.2rem;
+    }
+    main {
+        margin: 0 40px;
+    }
+    main h2 {
+        color: #022b3a;
+        font-size: 2rem;
+    }
+    .summary,
+    .hero img {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    .article {
+        margin: 40px 0;
+    }
+    .article img {
+        width: 50%;
+        float: right;
+        margin: 0 0 20px 20px;
+    }
+    footer {
+        padding: 60px 90px 50px;
+    }
+    #footerbar {
+        font-size: .95rem;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+        margin-bottom: 250px;
+    }
+    figure {
+        margin-bottom: 5px;
+    }
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    form {
+        padding: 20px 50px;
+    }
+    form fieldset {
+        padding: 20px 50px;
+    }
+    section {
+        display: flex;
+        margin: 2% auto;
+        max-width: 600px;
+    }
+    section img {
+        width: 50%;
+    }
+    section div {
+        padding: 5% 5px;
+        width: 50%;
+    }
+    section h2 {
+        font-size: 1.6rem;
+    }
+    section h3 {
+        font-size: 1rem;
+    }
+    section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+}

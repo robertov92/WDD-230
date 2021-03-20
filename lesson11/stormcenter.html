@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Weather Club | Storm Center</title>
+    <meta name="description" content="Weather information and news from Eastern-Idaho. All you need to be up to date.">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/icon.ico">
+</head>
+
+<body>
+
+    <header>
+        <div id="prestonPancakes">
+            <p>Saturday = Preston Pancakes in the Park!
+                <br>9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <div id="header-container">
+            <div id="header-image-logo">
+                <img src="images/icon.png" alt="localweather icon">
+                <div id="title-moto">
+                    <h1>Local Weather Club</h1>
+                    <p>Your weather site</p>
+                </div>
+            </div>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Heaven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-container">
+            <h2>Report a Storm</h2>
+
+            <form method="get" action="thanks.html">
+
+                <fieldset class="form-top">
+                    <legend>Contact Information</legend>
+                    <label class="top">Full Name* <input type="text" name="fname" pattern="[\sA-Za-z]{5,}" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="2085551234" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date <input type="date" name="stormDate"></label>
+
+                    <label class="top">Storm type <input list="stormType" name="stormType">
+                        <datalist id="stormType">
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Flash Flood"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+
+                    <label class="top">Storm Severity: <span id="ratingvalue">5</span>
+                        <input name="stormSeverity" type="range" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+                    <label class="top">Storm Region
+                        <select name="stormRegion">
+                            <option>Select Region ...</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda-springs">Soda Springs</option>
+                            <option value="fish-haven">Fish Haven</option>
+                        </select>
+                    </label>
+
+
+                </fieldset>
+
+
+
+                <fieldset>
+                    <legend>Other Information</legend>
+                    <div>Are you in danger?</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+                    <br>
+                    <label class="top">Comments
+                                <textarea name="comments" rows="5" placeholder="Please include any other details here"></textarea></label>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Send Report">
+
+
+
+            </form>
+
+        </div>
+
+
+        <script src="js/lazyload.js"></script>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <div id="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>📍 555 Some Street</li>
+                    <li>☎ (123)456-7890</li>
+                    <li>✉ person@local.org</li>
+                </ul>
+                <div id="social-media">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="images/facebook.png" alt="Facebook Link"></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener"><img src="images/twitter.png" alt="Twitter Link"></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="images/instagram.png" alt="Instagram Link"></a>
+                </div>
+            </div>
+
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5736780.968431805!2d-118.64141435860562!3d45.406060969678165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho%2C%20USA!5e0!3m2!1sen!2smx!4v1614459460792!5m2!1sen!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="footerbar">
+                <p>&copy;Local Weather Club | Roberto Villanueva</p>
+                <p id="date"></p>
+                <p>
+                    <script src="js/scripts.js"></script>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFontLoad.js"></script>
+    <script src="js/windChill.js"></script>
+</body>
+
+</html>
