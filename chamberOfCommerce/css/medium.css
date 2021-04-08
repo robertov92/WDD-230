@@ -1,0 +1,74 @@
+@media only screen and (min-width: 35rem) {
+    /* Header */
+    header {
+        justify-content: space-around;
+        padding: 10px 30px;
+    }
+    header img {
+        width: 70px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    /* Main */
+    .text-inside-hero {
+        padding: 40px;
+        font-size: larger;
+        margin: 30px 20px;
+    }
+    .main-container {
+        padding: 0 20px;
+    }
+    .anouncement {
+        margin: 30px 0;
+    }
+    .anouncement-text {
+        font-size: 1.5rem;
+    }
+    .business {
+        margin: 30px 0;
+        font-size: larger;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3%;
+    }
+    .weather {
+        font-size: larger;
+    }
+    .join-explanation {
+        margin-bottom: 15px;
+        font-size: larger;
+    }
+    form {
+        padding: 30px;
+    }
+    .main-container.city {
+        padding: 30px;
+        font-size: larger;
+    }
+    .main-container.city p {
+        margin: 20px 0;
+    }
+    .city-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3%;
+    }
+    .main-container.directory {
+        font-size: larger;
+    }
+    div.card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin: 15px;
+    }
+    /* Footer */
+    footer {
+        padding: 60px 90px 50px;
+        margin-top: 70px;
+    }
+    #footerbar {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecatepec - Chamber of Commerce</title>
+    <meta name="description" content="Promoting business growth by hosting events, social media, teaching, and giving back to the community. Join us today!">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/icon.png">
+</head>
+
+<body>
+    <header>
+        <div class="icon-title">
+            <img src="images/icon.png" alt="Mexico Icon">
+            <h1>Ecatepec <br> Chamber of Commerce</h1>
+        </div>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="city.html">Ecatepec</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero-image">
+            <img id="home-hero" src="images/home-hero.jpg" alt="hero image">
+            <div class="text-inside-hero">
+                <h2>How can we help?</h2>
+                <p>We can help promote your business growth by:</p>
+                <ul>
+                    <li>Hosting your events</li>
+                    <li>Sharing you in social media</li>
+                    <li>Helping you find new opportunities</li>
+                    <li>Networking</li>
+                    <li>Providing oportunities to serve</li>
+                </ul>
+                <button onclick="window.location.href='join.html'">Join us today!</button>
+            </div>
+            <div class="main-container">
+                <div class="anouncement">
+                    <div class="anouncement-text">
+                        <h2>Join us for our monthtly Zoom meeting!</h2>
+                        <p>This meeting is held the first Saturday of every month at 7:30 p.m.</p>
+                    </div>
+                    <img src="images/ecatepec1.jpg" alt="ecatepec centro">
+                </div>
+
+                <div class="businesses">
+
+                    <h2>Outstanding Businesses!</h2>
+                    <article class="business">
+
+                        <div class="article-text">
+                            <h3>El Rincon de la Arrachera</h3>
+                            <p>Fin de semana y estás buscando un lugar donde una rica arrachera? Nosotros encontramos por ti un sitio en donde vas a probar la arrachera más deliciosa de la ciudad, y ese lugar es el restaurante El Rincón de la Arrachera Ciudad
+                                de México, si quieres saber más, sigue leyendo. Este restaurante tiene un ambiente casual, lo que lo hace una excelente opción para acudir con toda la familia. Cuentan con una sazón casera, sus ingredientes son totalmente
+                                naturales y la carne está justo como tú la pediste: suave, jugosa y bien asadita.</p>
+                        </div>
+                        <img src="images/rincon.jpg" alt="Arrachera">
+                    </article>
+                    <article class="business">
+
+                        <div class="article-text">
+                            <h3>Tenis Panam</h3>
+                            <p>Fue en 1962, exactamente el 2 de agosto, cuando la marca de tenis Panam decidió crear EL calzado que se usaría con todo tipo de prenda casual. Esos tenis de tela, que se caracterizaban por tener una línea blanca en el costado
+                                y que tú seguramente has visto en el clóset o en las fotos de tu papá o que todavía conservas de los días de juventud. Desde entonces se convirtió no solo en un básico que todo mexicano tenía en su clóset, sino que se transformó
+                                en un ícono de la época.</p>
+                        </div>
+                        <img src="images/panam.jpg" alt="panam">
+                    </article>
+                    <article class="business">
+
+                        <div class="article-text">
+                            <h3>Cocinas y Muebles del Valle</h3>
+                            <p>Somos una empresa 100% Mexicana, dedicada a la fabricación de todo tipo de muebles con los más altos estándares de calidad y al mejor precio. Todos nuestros muebles son diseñados y elaborados por artesanos mexicanos y con materia
+                                prima mexicana. Nuestro Compromiso es que todas las familias mexicanas puedan disfrutar del comfort de nuestros muebles a precios muy accesibles con diseños innovadores y a la vanguardia. </p>
+                        </div>
+                        <img src="images/del_valle.jpg" alt="del valle">
+                    </article>
+                </div>
+                <div class="weather">
+                    <div class="current-weather">
+                        <h3>Weather Summary</h3>
+                        <p>Currently: <span id="current-condition"></span></p>
+                        <p>Current Temperature: <span id="temperature"></span> °C</p>
+                        <p>Highest: <span id="max-temperature"></span> °C</p>
+                        <p>Lowest: <span id="min-temperature"></span> °C</p>
+                        <p>Wind Chill: <span id="windChill"></span> °C</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+                    </div>
+                    <div class="table-forecast">
+                        <h3>5 Days Forecast</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th id="dayofweek1"></th>
+                                    <th id="dayofweek2"></th>
+                                    <th id="dayofweek3"></th>
+                                    <th id="dayofweek4"></th>
+                                    <th id="dayofweek5"></th>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src1">
+                                        <p><span id="forecast-temp1"></span> °C</p>
+                                    </td>
+                                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src2">
+                                        <p><span id="forecast-temp2"></span> °C</p>
+                                    </td>
+                                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src3">
+                                        <p><span id="forecast-temp3"></span> °C</p>
+                                    </td>
+                                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src4">
+                                        <p><span id="forecast-temp4"></span> °C</p>
+                                    </td>
+                                    <td><img src="images/placeholderWeather.PNG" alt="" id="image-src5">
+                                        <p><span id="forecast-temp5"></span> °C</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="contact-info">
+            <h3>Contact Information</h3>
+            <ul>
+                <li>📍 555 Some Street</li>
+                <li>☎ (123)456-7890</li>
+                <li>✉ ecatepec@commerce.org</li>
+            </ul>
+            <div id="social-media">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="images/facebook.png" alt="Facebook Link"></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener"><img src="images/twitter.png" alt="Twitter Link"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="images/instagram.png" alt="Instagram Link"></a>
+            </div>
+        </div>
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120297.3288783237!2d-99.10774490400271!3d19.572007235942745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f21c72f777a1%3A0x4cd4540a42b26680!2sAgricultura%204-A%2C%20Ecatepec%20de%20Morelos%2C%20M%C3%A9x.!5e0!3m2!1sen!2smx!4v1617818727738!5m2!1sen!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="footerbar">
+            <p>&copy;Ecatepec - Chamber of Commerce | Roberto Villanueva | Powered by <a id="owm" href="https://openweathermap.org/" target="_blank" rel="noopener">OpenWeatherMap.org</a></p>
+            <p id="date"></p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

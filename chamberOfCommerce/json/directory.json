@@ -1,0 +1,45 @@
+{
+    "businesses": [{
+        "business": "El Rincon de la Arrachera",
+        "phone": "(55) 2486 4542",
+        "address": "Av. Central esq. 1º de Mayo Col. Las Américas",
+        "logo": "https://static.wixstatic.com/media/ce442a_2e7d7ee1e6484c9ca1e539c53456f722~mv2.png/v1/fill/w_398,h_398,al_c,lg_1,q_85/logo10x10cm-02.webp",
+        "website": "https://www.elrincondelaarrachera.com/"
+    }, {
+        "business": "Panam",
+        "phone": "55 58 39 78 10",
+        "address": "Av. Central, Fraccionamiento Las Americas, Jardines de Morelos",
+        "logo": "https://cdn.shopify.com/s/files/1/0274/5597/9638/files/1200x628_panam_Mesa_de_trabajo_1_7746b4e6-5b7d-4009-a30e-05d3772cd0b5.png?v=1600114219",
+        "website": "https://panam.com.mx/"
+    }, {
+        "business": "Cocinas y Muebles del Valle",
+        "phone": "55 4618 2732",
+        "address": "Calle Avenida Esmeralda, Exterior Mz 4, Interior Lt 6",
+        "logo": "https://images.homify.com/image/upload/v1551501764/p/user/avatar/6408307/Captura_de_pantalla_2016-08-18_a_las_8.00.39_p.m..jpg",
+        "website": "https://cocinasymueblesdelvalle.com.mx/"
+    }, {
+        "business": "Cinemex",
+        "phone": "55 5257 6969",
+        "address": "Avenida Central Manzana No. 632 No. Exterior 50, La Florida Cd Azteca",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/07/Logo-Cinemex.jpg",
+        "website": "https://cinemex.com/"
+    }, {
+        "business": "Gorditas Doña Tota",
+        "phone": "7711178476",
+        "address": "Plaza del Valle, 42083",
+        "logo": "https://www.galerias.com/admin/images/marcas/03102016111323167_03102016_DonaTota_LG.jpg",
+        "website": "https://donatota.com/"
+    }, {
+        "business": "Soriana",
+        "phone": "800 220 1234",
+        "address": " Av. Central 65, 1ro de Agosto",
+        "logo": "https://pbs.twimg.com/profile_images/1082319678893023234/QM2qBfnH_400x400.jpg",
+        "website": "https://www.soriana.com/"
+    }, {
+        "business": "Guerrero Azteca Gym",
+        "phone": "55 4492 0932",
+        "address": "Blvd. Quetzalcoatl 31-Loc.1, Cd Azteca 3ra Secc",
+        "logo": "https://lh3.googleusercontent.com/Kibic-pgjluDlxR2QE29oVX6nz8CuBwIk2QoN3El-VAsq7pnko1WPtXl5026ZiIQbgA6gqKw=w1080-h608-p-no-v0",
+        "website": "https://guerrerosgym.negocio.site/"
+    }]
+}

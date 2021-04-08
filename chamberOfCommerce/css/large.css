@@ -1,0 +1,94 @@
+@media only screen and (min-width: 930px) {
+    /* Header */
+    header button {
+        display: none;
+    }
+    /* Nav */
+    nav {
+        align-content: center;
+    }
+    nav ul {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        border: none;
+        width: 135px;
+        padding: 1.2rem 1rem;
+        font-size: 1.2rem;
+    }
+    nav ul.hide {
+        display: block;
+    }
+    /* Main */
+    .hero {
+        position: relative;
+    }
+    .text-inside-hero {
+        position: absolute;
+        top: 16%;
+        left: 16%;
+        color: rgb(250, 249, 215);
+        background-color: transparent;
+        font-size: 1.5rem;
+    }
+    .text-inside-hero button {
+        font-size: 1.7rem;
+    }
+    .anouncement {
+        margin: 50px 0;
+    }
+    .business {
+        grid-template-columns: 2fr 1fr;
+    }
+    .weather {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        grid-gap: 3%;
+    }
+    .main-container.join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5%;
+        margin: 40px auto 0;
+    }
+    form {
+        padding: 40px;
+    }
+    .main-container.city {
+        padding: 40px;
+    }
+    .city-images {
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+    div.card {
+        margin: 0 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    /* Footer */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin-top: 100px;
+    }
+    #map {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        height: 220px;
+        width: 460px;
+    }
+    #contact-info {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    #footerbar {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+}

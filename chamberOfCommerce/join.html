@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecatepec - Chamber of Commerce</title>
+    <meta name="description" content="Promoting business growth by hosting events, social media, teaching, and giving back to the community. Join us today!">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/icon.png">
+</head>
+
+<body>
+    <header>
+        <div class="icon-title">
+            <img src="images/icon.png" alt="Mexico Icon">
+            <h1>Ecatepec <br> Chamber of Commerce</h1>
+        </div>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city.html">Ecatepec</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-container join">
+
+            <div class="join-explanation">
+                <h2>Become a Member!</h2>
+                <br>
+                <p>We can help promote your business growth by:</p>
+                <br>
+                <ul>
+                    <li>Hosting your events</li>
+                    <li>Sharing you in social media</li>
+                    <li>Helping you find new opportunities</li>
+                    <li>Providing networking oportunities</li>
+                    <li>Providing oportunities to serve</li>
+                </ul>
+                <br>
+                <p>All applications need to be reviewed. By completing the following form, you are just giving us a way to communicate with you directly.</p>
+                <br>
+                <p>Thank you so much for your interest!</p>
+            </div>
+
+            <form method="get" action="thanks.html">
+                <h3>Please complete this form...</h3>
+
+                <label class="top">First Name* <input type="text" name="fname" pattern="[\sA-Za-z]{5,}" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" pattern="[\sA-Za-z]{5,}" required></label>
+                <label class="top">Title <input type="text" name="title" pattern="[\sA-Za-z]{5,}"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="2085551234"></label>
+                <label class="top">Business Name* <input type="text" name="businessName" pattern="[\sA-Za-z]{5,}" required></label>
+                <label class="top">Business Address <input type="text" name="businessAddress" pattern="[\sA-Za-z]{5,}"></label>
+                <label class="top">Business Website <input type="url" name="businessWebsite"></label>
+                <label class="top">Business Description
+                    <textarea name="comments" rows="5" placeholder="Please describe your business"></textarea></label>
+                <label class="top">Membership Level <input list="membershipType" name="membershipType">
+                        <datalist id="membershipType">
+                            <option value="Non-Profit"></option>
+                            <option value="Bronze"></option>
+                            <option value="Silver"></option>
+                            <option value="Gold"></option>
+                        </datalist>
+                    </label>
+                <input class="submitBtn" type="submit" value="Join us!">
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="contact-info">
+            <h3>Contact Information</h3>
+            <ul>
+                <li>📍 555 Some Street</li>
+                <li>☎ (123)456-7890</li>
+                <li>✉ ecatepec@commerce.org</li>
+            </ul>
+            <div id="social-media">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="images/facebook.png" alt="Facebook Link"></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener"><img src="images/twitter.png" alt="Twitter Link"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="images/instagram.png" alt="Instagram Link"></a>
+            </div>
+        </div>
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120297.3288783237!2d-99.10774490400271!3d19.572007235942745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f21c72f777a1%3A0x4cd4540a42b26680!2sAgricultura%204-A%2C%20Ecatepec%20de%20Morelos%2C%20M%C3%A9x.!5e0!3m2!1sen!2smx!4v1617818727738!5m2!1sen!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="footerbar">
+            <p>&copy;Ecatepec - Chamber of Commerce | Roberto Villanueva</p>
+            <p id="date"></p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
